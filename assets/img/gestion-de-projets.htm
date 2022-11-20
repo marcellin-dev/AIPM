@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <title>Gestion de projet Définition</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:image" content="https://www.50a.fr/share.jpg" />
+    <link rel="apple-touch-icon" href="https://www.50a.fr/img/50a-iphone.png" />
+    <link rel="icon" href="https://www.50a.fr/favicon.ico" />
+
+    <link rel="canonical" href="https://www.50a.fr/0/gestion-de-projets" />
+
+            <script src="https://www.50a.fr/js/jquery.min.js "></script>
+    
+    <style type="text/css">
+        @font-face {
+            font-family: proxima-nova;
+            font-style: normal;
+            font-weight: 300;
+            src: url(../fonts/proxima-nova/ProximaNova-Light.woff) format("woff");
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: proxima-nova;
+            font-style: normal;
+            font-weight: 500;
+            src: url(../fonts/proxima-nova/ProximaNova-Regular.woff) format("woff");
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: proxima-nova;
+            font-style: normal;
+            font-weight: 700;
+            src: url(../fonts/proxima-nova/ProximaNova-Bold.woff) format("woff");
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: proxima-nova;
+            font-style: normal;
+            font-weight: 900;
+            src: url(../fonts/proxima-nova/ProximaNova-Extrabld.woff) format("woff");
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: intro-inline;
+            font-display: optional;
+            src: url(../fonts/intro-inline/2D3034_0_0.eot);
+            src: url(../fonts/intro-inline/2D3034_0_0.eot?#iefix) format("embedded-opentype"), url(../fonts/intro-inline/2D3034_0_0.woff2) format("woff2"), url(../fonts/intro-inline/2D3034_0_0.woff) format("woff"), url(../fonts/intro-inline/2D3034_0_0.ttf) format("truetype");
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: gandhi;
+            src: url(../fonts/gandhi/GandhiSerif-Regular-webfont.eot);
+            src: url(../fonts/gandhi/GandhiSerif-Regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/gandhi/GandhiSerif-Regular-webfont.woff) format("woff"), url(../fonts/gandhi/GandhiSerif-Regular-webfont.ttf) format("truetype"), url(../fonts/gandhi/GandhiSerif-Regular-webfont.svg#gandhi_serifregular) format("svg");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: "50a-site";
+            src: url(../fonts/50a/50a-site.eot);
+            src: url(../fonts/50a/50a-site.eot?#iefix) format("embedded-opentype"), url(../fonts/50a/50a-site.woff) format("woff"), url(../fonts/50a/50a-site.ttf) format("truetype"), url(../fonts/50a/50a-site.svg#50a-site) format("svg");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap
+        }
+
+        .right {
+            float: right
+        }
+
+        .hide,
+        .mobile {
+            display: none !important
+        }
+
+        .vertical-align {
+            display: table;
+            height: 100%;
+            width: 100%
+        }
+
+        .vertical-align>div {
+            display: table-cell;
+            vertical-align: middle
+        }
+
+        .clearfix:after,
+        div[class*=" col-"]:after,
+        div[class^=col-]:after {
+            clear: both
+        }
+
+        .clearfix,
+        div[class*=" col-"],
+        div[class^=col-] {
+            zoom: 1
+        }
+
+        .cover,
+        body,
+        html {
+            position: relative
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-family: proxima-nova;
+            color: #031c23;
+            font-size: 18px;
+            line-height: 25px;
+            min-height: 100%
+        }
+
+        #main {
+            overflow: hidden
+        }
+
+        a {
+            text-decoration: none;
+            color: #000
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%
+        }
+
+        a.btn {
+            font-family: proxima-nova;
+            position: relative;
+            text-transform: uppercase;
+            font-size: 16px;
+            text-align: center;
+            display: inline-block;
+            letter-spacing: .5px;
+            font-weight: 800;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 7px 12px 5px
+        }
+
+        a.btn.black {
+            border: 1px solid #000;
+            color: #000
+        }
+
+        button.btn {
+            font-family: proxima-nova !important;
+            position: relative !important;
+            text-transform: uppercase !important;
+            font-size: 16px !important;
+            text-align: center !important;
+            display: inline-block !important;
+            letter-spacing: .5px !important;
+            font-weight: 800 !important;
+            border: 1px solid #fff !important;
+            color: #fff !important;
+            padding: 7px 12px 5px !important;
+            background-color: #fff !important
+        }
+
+        button.btn.black {
+            border: 1px solid #000 !important;
+            color: #000 !important
+        }
+
+        a img {
+            border: none
+        }
+
+        p {
+            line-height: 1.5em;
+            margin: 30px 0
+        }
+
+        #objet_contact {
+            border: 1px solid #000;
+            background-color: #fff;
+            padding: 8px;
+            height: 40px
+        }
+
+        input[type=text],
+        textarea {
+            font-family: proxima-nova;
+            font-size: 12px
+        }
+
+        textarea.input {
+            height: 40px;
+            padding-top: 12px;
+            padding-bottom: 0;
+            width: 100%;
+            margin-bottom: 13px;
+            padding-left: 13px
+        }
+
+        textarea.input.right {
+            width: 95%
+        }
+
+        textarea {
+            border: 1px solid #000;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box
+        }
+
+        .h2resource,
+        h1 {
+            font-family: intro-inline;
+            font-size: 70px;
+            font-weight: 100;
+            -webkit-font-smoothing: antialiased;
+            margin-top: -15px;
+            line-height: 100%;
+            margin-bottom: 0
+        }
+
+        .podcasts-subtitle {
+            text-align: left !important;
+            margin: 0 !important;
+            padding: 30px 0 !important
+        }
+
+        .h2,
+        h2 {
+            font-size: 50px;
+            font-weight: 300;
+            line-height: 100%;
+            padding-top: 35px;
+            margin-bottom: 40px;
+            margin-top: 0;
+            text-transform: uppercase
+        }
+
+        .h2 strong,
+        h2 strong {
+            font-weight: 900
+        }
+
+        ul {
+            list-style: none
+        }
+
+        ul,
+        ul li {
+            padding: 0
+        }
+
+        div[class*=" col-"]>div,
+        div[class^=col-]>div {
+            float: left
+        }
+
+        .col-2>div {
+            width: 50%
+        }
+
+        .col-1-2>div,
+        .col-2-1>div:first-child {
+            width: 66.66%
+        }
+
+        .col-1-2>div:first-child {
+            width: 33.33%
+        }
+
+        .clearfix:after,
+        .clearfix:before,
+        div[class*=" col-"]:after,
+        div[class*=" col-"]:before,
+        div[class^=col-]:after,
+        div[class^=col-]:before {
+            content: ".";
+            display: block;
+            height: 0;
+            overflow: hidden
+        }
+
+        .container {
+            width: 1024px;
+            position: relative;
+            z-index: 2
+        }
+
+        .container,
+        .sub-container {
+            margin: 0 auto;
+            height: 100%
+        }
+
+        .slide {
+            width: 100%;
+            position: relative;
+            overflow: hidden
+        }
+
+        .slide.header {
+            overflow: visible
+        }
+
+        .imp {
+            font-weight: 800;
+            font-size: 25px;
+            text-transform: uppercase;
+            line-height: 25px
+        }
+
+        #main-menu {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: transparent;
+            transition: background-color .3s linear
+        }
+
+        #main-menu a {
+            transition: opacity .1s linear;
+            opacity: 1
+        }
+
+        #main-menu a:hover {
+            opacity: .7
+        }
+
+        #main-menu.small,
+        #main-menu.stays-small {
+            background-color: rgba(0, 0, 0, .6)
+        }
+
+        #main-menu .container {
+            padding: 20px 0;
+            transition: padding .3s linear;
+            box-sizing: border-box
+        }
+
+        #main-menu.small .container,
+        #main-menu.stays-small .container {
+            padding: 0;
+            background-image: none
+        }
+
+        #main-menu .logo {
+            float: left;
+            width: 60px;
+            display: block
+        }
+
+        #main-menu .logo img {
+            display: block
+        }
+
+        #main-menu ul {
+            float: right;
+            margin: 4px 0 0
+        }
+
+        #main-menu ul li {
+            float: left;
+            margin-left: 38px
+        }
+
+        #main-menu a {
+            color: #fff;
+            font-weight: 800;
+            display: block;
+            font-size: 14px;
+            padding: 10px 0;
+            text-align: center
+        }
+
+        footer.main {
+            background-color: #000;
+            z-index: 2;
+            color: #fff;
+            padding: 50px 0
+        }
+
+        footer.main .w3c {
+            width: 93px;
+            display: block;
+            float: right;
+            margin-top: 20px;
+            margin-right: -10px
+        }
+
+        #block-subvention {
+            background-color: #cb1b00;
+            color: #fff;
+            text-align: center
+        }
+
+        #block-subvention,
+        #block-subvention a {
+            margin-bottom: 30px
+        }
+
+        #block-subvention div {
+            float: none
+        }
+
+        .subsheart {
+            font-size: 44px !important;
+            margin-right: 20px
+        }
+
+        footer.main .column-2 a,
+        footer.main .column-3 a,
+        footer.main .column-4 a {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 26px;
+            position: relative;
+            left: 0;
+            top: 0;
+            transition: top .1s linear, left .1s linear
+        }
+
+        footer.main .container>div {
+            float: left
+        }
+
+        footer.main .column-1 {
+            width: 33%
+        }
+
+        footer.main .column-1 .we-love {
+            text-align: right;
+            padding-right: 10px;
+            box-sizing: border-box;
+            font-size: 20px;
+            text-transform: uppercase;
+            line-height: 30px
+        }
+
+        footer.main .column-1 .fa-heart {
+            color: #c1150e
+        }
+
+        footer.main .column-2 {
+            width: 28%;
+            box-sizing: border-box;
+            padding-left: 1.5%
+        }
+
+        footer.main .column-3 {
+            width: 26%;
+            box-sizing: border-box;
+            padding-left: 5%
+        }
+
+        footer.main .column-4 {
+            width: 12%;
+            box-sizing: border-box;
+            text-align: right
+        }
+
+        footer.main ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0
+        }
+
+        footer.main .column-1 ul {
+            margin-left: 20px
+        }
+
+        footer.main .column-1 li a {
+            margin-bottom: 10px;
+            font-size: 14px;
+            padding: 3px 12px 1px
+        }
+
+        footer.main li .fa {
+            margin-right: 8px;
+            position: relative;
+            top: 1px
+        }
+
+        footer.main .social-icons {
+            margin-top: 10px
+        }
+
+        footer.main .social-icons a {
+            display: inline-block;
+            margin-left: 10px;
+            width: 20px;
+            margin-bottom: 10px
+        }
+
+        #slide-contact {
+            background-color: #fff;
+            padding: 50px 0
+        }
+
+        #slide-contact .infos {
+            border-collapse: collapse;
+            float: right
+        }
+
+        #slide-contact .infos td {
+            padding-bottom: 8px;
+            font-size: 15px;
+            vertical-align: top
+        }
+
+        #slide-contact .infos .fa {
+            width: 30px;
+            text-align: center
+        }
+
+        #slide-contact .wrapper-map {
+            position: relative
+        }
+
+        #slide-contact .send-button {
+            display: block;
+            float: right;
+            margin-top: 20px
+        }
+
+        #slide-contact .form {
+            float: right;
+            width: 72%
+        }
+
+        #slide-contact .no-time {
+            float: left;
+            margin-left: 10%;
+            width: 18%
+        }
+
+        #glossaire-keyword p a,
+        #glossaire-keyword ul a {
+            color: #fff;
+            text-decoration: underline
+        }
+
+        #glossaire-keyword p a {
+            text-decoration: underline !important;
+            -webkit-text-decoration-color: #fff !important;
+            text-decoration-color: #fff !important
+        }
+
+        #glossaire-keyword .header {
+            text-align: center;
+            height: 90px;
+            padding-top: 200px;
+            padding-bottom: 160px
+        }
+
+        #glossaire-keyword .definition {
+            padding: 65px 0;
+            background-color: #031c23;
+            color: #fff
+        }
+
+        #glossaire-keyword .sub-container {
+            max-width: 675px
+        }
+
+        #glossaire-keyword .btn-wrapper {
+            text-align: center
+        }
+
+        #slide-definition {
+            height: -webkit-max-content;
+            height: -moz-max-content;
+            height: max-content
+        }
+
+        #slide-definition img {
+            height: auto !important
+        }
+
+        .hvr-sweep-to-top {
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            transition-property: color
+        }
+
+        .hvr-sweep-to-top,
+        .hvr-sweep-to-top:before {
+            transition-duration: .2s
+        }
+
+        .hvr-sweep-to-top:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            transform: scaleY(0);
+            transform-origin: 50% 100%;
+            transition-property: transform;
+            transition-timing-function: ease-out
+        }
+
+        .hvr-sweep-to-top.black:before {
+            background: #000
+        }
+
+        select {
+            width: 100%;
+            cursor: pointer;
+            z-index: 2
+        }
+
+        .customSelect {
+            border: 1px solid #000;
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 13px;
+            position: relative;
+            z-index: 1;
+            font-weight: 700;
+            text-align: left
+        }
+
+        .customSelect .right-part {
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 40px;
+            box-sizing: border-box;
+            border-left: 1px solid #000;
+            font-size: 25px
+        }
+
+        .customSelect .right-part .fa {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 15px;
+            height: 25px
+        }
+
+        .customSelectInner {
+            width: 100% !important
+        }
+
+        #popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .6);
+            z-index: 100
+        }
+
+        @media  screen and (max-width:1023px) {
+            #block-subvention .h2 {
+                font-size: 30px
+            }
+
+            .subsheart {
+                display: none !important
+            }
+        }
+
+        #block-newsletter {
+            background-color: #15b0bf;
+            color: #fff;
+            text-align: center
+        }
+
+        #agency-links {
+            margin-top: 5px
+        }
+
+        #agency-links a {
+            font-weight: 900;
+            color: #000;
+            background-color: #e8e8e8;
+            padding: 6px 10px;
+            text-transform: uppercase;
+            margin-left: 2px
+        }
+
+        #agency-links a:first-child {
+            margin-left: 0
+        }
+
+        .description-contact {
+            text-align: left;
+            padding-top: 5%;
+            padding-bottom: 3%
+        }
+
+        .description-content {
+            font-size: 15px
+        }
+
+        .cities-titles {
+            font-size: 20px !important
+        }
+
+        .placeholder:after {
+            content: "*";
+            color: red
+        }
+
+        .placeholder {
+            color: #c3c3c3;
+            font-family: proxima-nova;
+            font-size: 12px;
+            position: relative;
+            display: block;
+            top: -52px;
+            max-height: 0
+        }
+
+        @media (min-width:1023px) {
+            .placeholder {
+                left: 10px
+            }
+        }
+
+        .placeholder-nr {
+            color: #c3c3c3;
+            font-family: proxima-nova;
+            font-size: 12px;
+            position: relative;
+            display: block;
+            top: -52px;
+            max-height: 0
+        }
+
+        @media (min-width:1023px) {
+            .placeholder-nr {
+                left: 10px
+            }
+        }
+
+        .placeholder-nr-r {
+            color: #c3c3c3;
+            font-family: proxima-nova;
+            font-size: 12px;
+            position: relative;
+            display: block;
+            top: -45px;
+            max-height: 0
+        }
+
+        @media (min-width:1023px) {
+            .placeholder-nr-r {
+                left: 22px
+            }
+        }
+
+        .placeholder-message:after {
+            content: "*";
+            color: red
+        }
+
+        .placeholder-message {
+            color: #c3c3c3;
+            font-family: proxima-nova;
+            font-size: 12px;
+            position: relative;
+            display: block;
+            top: -170px !important;
+            max-height: 0
+        }
+
+        @media (min-width:1023px) {
+            .placeholder-message {
+                left: 10px
+            }
+        }
+
+        .wrapper-first,
+        .wrapper-fourth,
+        .wrapper-second,
+        .wrapper-third {
+            position: relative;
+            display: inline-block
+        }
+
+        .wrapper-seventh #budget_contact {
+            margin-top: 20px;
+            width: 491px !important
+        }
+
+        .wrapper-seventh .customSelect {
+            width: 100%;
+            margin-top: 20px;
+            font-family: proxima-nova;
+            font-size: 13px
+        }
+
+        .wrapper-seventh.invisible {
+            display: none
+        }
+
+        #block-spreaker iframe {
+            height: 202px
+        }
+
+        #block-spreaker-episodes {
+            margin-top: 26px;
+            margin-bottom: 34px
+        }
+
+        #block-spreaker-episodes a {
+            color: #fff;
+            margin-right: 20px
+        }
+
+        @media (max-width:1023px) {
+
+            #home .bg-video,
+            #main-menu {
+                display: none
+            }
+
+            #main {
+                margin-top: 77px
+            }
+
+            .mobile {
+                display: block !important
+            }
+
+            .container {
+                width: 90%
+            }
+
+            h1 {
+                font-size: 38px !important
+            }
+
+            h2 {
+                font-size: 32px;
+                text-align: center
+            }
+
+            .imp {
+                font-size: 18px
+            }
+
+            iframe {
+                width: 100%
+            }
+
+            div[class*=" col-"]>div,
+            div[class^=col-]>div {
+                float: none;
+                width: 100% !important;
+                margin-bottom: 15px
+            }
+
+            #contact,
+            #home .digital .left-part,
+            #home .inbound .left-part,
+            #home .numerique .left-part,
+            #home .social .right-part,
+            #home .video-media .right-part,
+            #like-button,
+            #references .height-space,
+            #slide-contact .no-time,
+            #social .top .redoute,
+            #vertical-nav,
+            #vertical-nav-pins,
+            .academy-home .left-part,
+            .one-more-thing,
+            .resource-home .right-part {
+                display: none
+            }
+
+            #slide-contact {
+                text-align: center
+            }
+
+            #slide-contact .infos {
+                float: none;
+                margin: auto
+            }
+
+            #slide-contact .form {
+                float: none;
+                width: 100%
+            }
+
+            #slide-contact form .col-2>div {
+                margin-bottom: 0
+            }
+
+            .customSelect.right,
+            textarea.input.right {
+                width: 100%
+            }
+
+            #slide-contact {
+                overflow: hidden
+            }
+
+            footer.main .container>div {
+                float: none;
+                width: 100%;
+                text-align: center
+            }
+
+            footer.main .column-1 .we-love {
+                float: left;
+                width: 50% !important;
+                height: 190px
+            }
+
+            footer.main .column-3 {
+                margin-top: 20px;
+                margin-bottom: 30px
+            }
+
+            #mobile-menu {
+                background-color: #000;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 100;
+                width: 100%
+            }
+
+            #mobile-menu .fixed-part {
+                z-index: 100
+            }
+
+            #mobile-menu .moving-part {
+                transition: top .2s linear;
+                top: -100%;
+                background-color: #000;
+                position: fixed;
+                width: 100%;
+                left: 0;
+                z-index: 50;
+                height: 100%;
+                padding-top: 77px;
+                box-sizing: border-box;
+                overflow: scroll
+            }
+
+            #mobile-menu .moving-part .footer {
+                width: 100%;
+                text-align: center;
+                color: #fff
+            }
+
+            #mobile-menu .moving-part .footer a {
+                color: #fff;
+                border: 1px solid #fff;
+                padding: 20px 30px;
+                margin-bottom: 10px
+            }
+
+            #mobile-menu .moving-part .footer a,
+            #mobile-menu .moving-part .footer p {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 22px
+            }
+
+            #mobile-menu .moving-part .footer p i {
+                color: #d50f16
+            }
+
+            #mobile-menu ul a {
+                color: #fff;
+                text-align: center;
+                display: block;
+                margin-bottom: 25px;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 22px
+            }
+
+            #mobile-menu ul a.yellow {
+                color: #ea9710
+            }
+
+            #mobile-menu ul a.red {
+                color: #d50f16
+            }
+
+            #mobile-menu ul a.purple {
+                color: #8b4a97
+            }
+
+            #mobile-menu ul a.blue {
+                color: #52adbc
+            }
+
+            #mobile-menu ul {
+                width: 100%;
+                z-index: 1;
+                position: relative;
+                margin: 20px 0 0
+            }
+
+            #mobile-menu .open {
+                width: 100%;
+                padding: 20px 0;
+                margin: 0;
+                z-index: 2;
+                position: relative;
+                background-color: #000;
+                display: block
+            }
+
+            #mobile-menu .open img.logo {
+                height: 38px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto
+            }
+
+            #mobile-menu .open img.burger {
+                height: 38px;
+                width: 38;
+                float: right
+            }
+
+            .w3c,
+            .wrapper-map {
+                display: none !important
+            }
+
+            #mobile-menu .switch {
+                border: 1px solid #fff;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                text-align: center;
+                color: #fff;
+                font-size: 22px;
+                font-weight: 600;
+                display: block;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                line-height: 50px;
+                position: absolute;
+                left: 2px;
+                top: 14px;
+                z-index: 100
+            }
+
+            .sub-container {
+                width: 100% !important
+            }
+
+            #client .results .col-2>div,
+            footer.main .column-2,
+            footer.main .column-3 {
+                padding: 0
+            }
+
+            footer.main .column-4 a.first {
+                margin-left: 0
+            }
+
+            #block-newsletter img {
+                display: none
+            }
+
+            #block-newsletter .h2 {
+                font-size: 30px
+            }
+        }
+
+        @media (min-width:620px) and (max-width:1023px) {
+            .container {
+                width: 600px
+            }
+        }
+
+        @media (min-width:1024px) and (max-width:1150px) {
+            .container {
+                width: 960px
+            }
+        }
+
+        #block-newsletter img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1
+        }
+
+        #mobile-menu.active .moving-part {
+            top: 0
+        }
+
+        #budg {
+            display: none
+        }
+
+        .podcast-title {
+            font-size: 50px
+        }
+
+        .js-cookie-consent {
+            left: 0;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            background-color: #eee;
+            padding: 4px;
+            z-index: 1000;
+            text-align: center;
+            font-size: 14px
+        }
+
+        #cookieChoiceInfo {
+            font-size: 14px
+        }
+
+        #cookieChoiceInfo a {
+            color: #ea9710
+        }
+
+        #cookieChoiceInfo a:hover {
+            text-decoration: underline
+        }
+    </style>
+
+
+    
+
+    
+
+    
+    
+</head>
+
+<body class='no-touch'>
+    <span id='root-url' class='hide'>https://www.50a.fr</span>
+    <span id='current-lang' class='hide'>fr</span>
+    <span id='current-page' class='hide'>glossaire-keyword</span>
+    <div id='mobile-menu' class='mobile'>
+  <div class='fixed-part container'>
+    <a class='switch' data-analytics='Menu:switchlang' href='https://www.50a.io'>
+      EN
+    </a>
+    <a class='open clearfix' href='#'>
+      <img class='logo' src='https://www.50a.fr/img/logo-couleur.webp' alt='logo' />
+      <img class='burger' src='https://www.50a.fr/img/burger.webp' alt='menu burger' />
+    </a>
+  </div>
+  <div class='moving-part container'>
+    <ul>
+      <li><a href='https://www.50a.fr'>Accueil agence</a></li>
+      <li><a class='yellow' href='https://www.50a.fr/agence-communication-digitale'>UX / DEV FULL STACK</a></li>
+      <li><a class='red' href='https://www.50a.fr/agence-social-media'>SOCIAL MEDIA</a></li>
+      <li><a class='blue' href='https://www.50a.fr/inbound-marketing-automation'>INBOUND MARKETING</a></li>
+      <li><a class='purple' href='https://www.50a.fr/transition-numerique'>Transition<br>numérique</a></li>
+      <li><a href='https://www.50a.fr/nos-references'>Références</a></li>
+      <li><a href='https://www.50a.fr/agence-digitale'>L’agence</a></li>
+      <li><a href='https://www.50a.fr/contact'>Contact</a></li>
+    </ul>
+    <div class='footer'>
+      <a class='btn black hvr-sweep-to-top' href="https://www.50a.fr/contact">Demander un devis</a>
+      <p>We <i class="fa fa-heart"></i> vous rendre service</p>
+    </div>
+  </div>  
+</div>
+    <div id='main-menu' class=' stays-small '>
+  <div class='container dotted-border clearfix'>
+    <a data-analytics='Menu:logo' class='logo' href='https://www.50a.fr'>
+      <img loading="lazy" src='https://www.50a.fr/img/logo-small.png' alt='agence digitale 50A' />
+    </a>
+    
+    <ul class='clearfix'>
+      <li><a style='line-height: 1.2em;' data-analytics='Menu:dispositifs digitaux' href='https://www.50a.fr/agence-communication-digitale'>Dispositifs<br>digitaux</a></li>
+      <li><a style='line-height: 1.2em;' data-analytics='Menu:social media' href='https://www.50a.fr/agence-social-media'>Social Media<br>selling</a></li>
+      <li><a style='line-height: 1.2em;' data-analytics='Menu:inbound marketing automation' href='https://www.50a.fr/inbound-marketing-automation'>Inbound marketing<br>automation</a></li>
+      <li><a style='line-height: 1.2em;' data-analytics='Menu:transition numerique' href='https://www.50a.fr/transition-numerique'>Transition<br>numérique</a></li>
+      <li><a data-analytics='Menu:references' href='https://www.50a.fr/nos-references'>Références</a></li>
+      <li><a data-analytics='Menu:agence' href='https://www.50a.fr/agence-digitale'>L’agence</a></li>
+      <li><a data-analytics='Menu:contact' href='https://www.50a.fr/contact'>Contact</a></li>
+      <li>
+        <a style='border: 1px solid white;width: 35px;height: 30px;border-radius: 100%;padding: 0;text-align: center;position: relative;top: 4px;padding-top: 5px;' data-analytics='Menu:switchlang' href='https://www.50a.io'>
+          EN
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+        <section id="main">
+            <div id='glossaire-keyword'>
+        <div id='slide-header' class='slide header'>
+            <div class='container'>
+                <h1>Gestion de projet</h1>
+            </div>
+        </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [{
+                    "@type": "Question",
+                    "name": "Qu&#039;est-ce que la gestion de projet ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "
+Définition : Que signifie la gestion de projet ?
+La gestion de projet, est l&#039;application de compétences, d&#039;outils et de techniques aux activités du projet afin de répondre aux exigences du projet. C&#039;est l&#039;acte de gérer tous les aspects d&#039;un projet, de l&#039;équipe aux tâches et aux outils. C&#039;est pourquoi la gestion de projet est importante : sans elle, vous reléguez votre projet au hasard ou au chaos, ce qui n&#039;est pas idéal. Mais lorsqu&#039;on s&#039;y engage, il y a des processus et des pratiques spécifiques qui doivent être mis en place pour qu&#039;il soit couronné de succès.
+Pourquoi la gestion de projet est-elle si importante ?
+Parce que rien n&#039;est jamais fait sans l&#039;élaboration préalable d&#039;un plan de projet, et qu&#039;aucun plan de projet n&#039;est jamais exécuté sans l&#039;environnement ou les processus appropriés. La gestion de projet est alors l&#039;action qui aide à créer et à exécuter ce plan de projet. Il applique des compétences en gestion et en relations interpersonnelles au processus de réalisation d&#039;un projet, de sa conception à sa réalisation, conformément aux exigences établies.
+La gestion de projet est aujourd&#039;hui un élément phare de toutes les entreprise. Ce métier en constant évolution est fortement lié aux agences de communication, agences web, et agences digitales.
+Les différentes composantes de la gestion de projet
+
+Processus du projet
+
+Les projets sont réalisés à l&#039;aide de processus - qui sont définis comme des &#039; actions qui produisent des résultats &#039;. Et parce que le guide du PMBOK reconnaît 47 processus de gestion de projet différents, il est devenu plus facile de les regrouper en 5 groupes de processus de base et 10 domaines de connaissances que les projets types ont.
+
+Phases de gestion de projet
+
+La gestion de projet se fait nécessairement par phases, afin d&#039;améliorer le contrôle et la qualité. Cela signifie qu&#039;un grand projet est divisé en étapes plus faciles à gérer, chacune avec un produit livrable spécifique, et réalisé dans un ordre spécifique. À la fin de chaque phase, on procède habituellement à un examen des produits livrables et du rendement de l&#039;équipe de projet. Cela aide l&#039;équipe à déterminer si le projet passe à la phase suivante ou s&#039;il est révisé. Il détermine également comment améliorer la performance de toutes les parties concernées.
+
+Cycle de vie du projet
+
+Collectivement, toutes les phases d&#039;un projet constituent le cycle de vie du projet. Il existe de nombreuses phases de projet et de nombreux types de cycles de vie différents, selon l&#039;industrie et le projet en question. Le cycle de vie d&#039;un projet de développement de logiciel, par exemple, serait très différent de celui d&#039;un projet de construction.
+
+Intervenants du projet
+
+La gestion de projet implique activement les individus et même les organisations dont les intérêts sont affectés par le projet. Ce sont ce qu&#039;on appelle les parties prenantes du projet. La gestion des parties prenantes est l&#039;une des compétences clés dont un chef de projet a besoin.
+Comment fonctionne la gestion de projet ?
+Le chef de projet, avec les membres de l&#039;équipe et les principales parties prenantes, élabore l&#039;ensemble du plan de projet, ce qui implique l&#039;identification des objectifs, ainsi que la clarification de la portée et du budget. Ces éléments sont ensuite exécutés par les membres de l&#039;équipe de projet dans le cadre d&#039;un processus collaboratif, souvent itératif, qui permet des changements et des améliorations constantes. Les gestionnaires de projet doivent faire appel à des compétences générales en gestion pour faciliter le travail de projet. Les compétences qui entrent en jeu ici comprennent : la planification stratégique, la comptabilité, la communication, la recherche et le développement, le comportement organisationnel, la gestion du temps, en plus de la multitude de compétences générales de gestion relatives au leadership, à la motivation et à la résolution de conflits. Si vous vous demandez en quoi consiste la gestion de projet ?
+Nous décrivons ci-dessous certains des événements les plus typiques d&#039;un projet :
+
+Réunion de lancement : indiquez à l&#039;équipe les buts et les objectifs de haut niveau, exposez les détails dont vous disposez.
+Analyse des parties prenantes : déterminer qui sera le plus affecté par le projet afin qu&#039;elles puissent être consultées.
+Définition de la portée du projet : identifier toutes les exigences, les produits livrables et la portée du projet.
+Structure de répartition du travail (SRT) : diviser les phases du projet en blocs de travail qui peuvent être traités plus facilement.
+Planification de la gestion des risques : identification et planification des risques les plus probables qu&#039;un projet peut rencontrer au cours de son cycle de vie.
+Examen du projet/leçons apprises : faire un compte rendu à la fin d&#039;un projet afin d&#039;en tirer des leçons qui peuvent être ajoutées à la base de connaissances ou aux pratiques exemplaires de l&#039;organisation.
+
+La chargé de projets à pour mission de :
+
+Planifier le projet dans le temps et respecter les délais,
+Chiffrer et suivre le budget,
+Maîtriser et piloter les risques et imprévus,
+Manager les équipes (direction artistique, développement, …),
+Être l’intermédiaire entre les différentes parties prenantes (clients, équipes, …),
+Atteindre le niveau de qualité souhaité dans les temps impartis.
+>"
+                    }
+                }]
+            }
+        </script>
+        <div id='slide-definition' class='slide definition'>
+            <div class='container'>
+                
+                <div class='sub-container'>
+                    <h2><img src="/img/upload/gestion-de-projets.jpg" alt="Illustration gestion de projet" width="700" height="466" /></h2>
+<h2>D&eacute;finition : Que signifie la gestion de projet ?</h2>
+<p><strong>La gestion de projet</strong>, est l'application de comp&eacute;tences, d'outils et de techniques aux activit&eacute;s du projet afin de r&eacute;pondre aux exigences du projet. C'est l'acte de g&eacute;rer tous les aspects d'un projet, de l'&eacute;quipe aux t&acirc;ches et aux outils. C'est pourquoi la gestion de projet est importante : sans elle, <strong>vous rel&eacute;guez votre projet au hasard ou au chaos</strong>, ce qui n'est pas id&eacute;al. Mais lorsqu'on s'y engage, il y a des processus et des pratiques sp&eacute;cifiques qui doivent &ecirc;tre mis en place pour qu'il soit couronn&eacute; de succ&egrave;s.</p>
+<h3>Pourquoi la gestion de projet est-elle si importante ?</h3>
+<p>Parce que rien n'est jamais fait sans l'&eacute;laboration pr&eacute;alable d'un <strong>plan de projet</strong>, et qu'aucun plan de projet n'est jamais ex&eacute;cut&eacute; sans l'environnement ou les processus appropri&eacute;s. La gestion de projet est alors l'action qui aide &agrave; cr&eacute;er et &agrave; ex&eacute;cuter ce plan de projet. Il applique des comp&eacute;tences en gestion et en relations interpersonnelles au processus de r&eacute;alisation d'un projet, de sa conception &agrave; sa r&eacute;alisation, conform&eacute;ment aux exigences &eacute;tablies.</p>
+<p>La gestion de projet est aujourd'hui un &eacute;l&eacute;ment phare de toutes les entreprise. Ce m&eacute;tier en constant &eacute;volution est fortement li&eacute; aux <a href="https://www.50a.fr/0/agence-de-communication" target="_blank" rel="noopener">agences de communication</a>, <a href="https://www.50a.fr/0/agence-web" target="_blank" rel="noopener">agences web</a>, et <a href="https://www.50a.fr/0/agence-digitale" target="_blank" rel="noopener">agences digitales.</a></p>
+<h2>Les diff&eacute;rentes composantes de la gestion de projet</h2>
+<ul>
+<li>Processus du projet</li>
+</ul>
+<p>Les projets sont r&eacute;alis&eacute;s &agrave; l'aide de processus - qui sont d&eacute;finis comme des " actions qui produisent des r&eacute;sultats ". Et parce que le guide du <strong>PMBOK</strong> reconna&icirc;t 47 processus de gestion de projet diff&eacute;rents, il est devenu plus facile de les regrouper en 5 groupes de processus de base et 10 domaines de connaissances que les projets types ont.</p>
+<ul>
+<li>Phases de gestion de projet</li>
+</ul>
+<p>La gestion de projet se fait n&eacute;cessairement par phases, afin d'am&eacute;liorer le contr&ocirc;le et la qualit&eacute;. Cela signifie qu'un grand projet est divis&eacute; en &eacute;tapes plus faciles &agrave; g&eacute;rer, chacune avec un produit livrable sp&eacute;cifique, et r&eacute;alis&eacute; dans un ordre sp&eacute;cifique. &Agrave; la fin de chaque phase, on proc&egrave;de habituellement &agrave; un examen des produits livrables et du rendement de l'&eacute;quipe de projet. Cela aide l'&eacute;quipe &agrave; d&eacute;terminer si le projet passe &agrave; la phase suivante ou s'il est r&eacute;vis&eacute;. Il d&eacute;termine &eacute;galement comment <strong>am&eacute;liorer la performance</strong> de toutes les parties concern&eacute;es.</p>
+<ul>
+<li>Cycle de vie du projet</li>
+</ul>
+<p>Collectivement, toutes les phases d'un projet constituent le cycle de vie du projet. Il existe de nombreuses phases de projet et de nombreux types de cycles de vie diff&eacute;rents, selon l'industrie et le projet en question. Le cycle de vie d'un projet de d&eacute;veloppement de logiciel, par exemple, serait tr&egrave;s diff&eacute;rent de celui d'un projet de construction.</p>
+<ul>
+<li>Intervenants du projet</li>
+</ul>
+<p>La gestion de projet implique activement les individus et m&ecirc;me les organisations dont les int&eacute;r&ecirc;ts sont affect&eacute;s par le projet. Ce sont ce qu'on appelle les <strong>parties prenantes du projet</strong>. La gestion des parties prenantes est l'une des comp&eacute;tences cl&eacute;s dont un chef de projet a besoin.</p>
+<h2>Comment fonctionne la gestion de projet ?</h2>
+<p>Le chef de projet, avec les membres de l'&eacute;quipe et les principales parties prenantes, &eacute;labore l'ensemble du plan de projet, ce qui implique <strong>l'identification des objectifs, ainsi que la clarification de la port&eacute;e et du budget</strong>. Ces &eacute;l&eacute;ments sont ensuite ex&eacute;cut&eacute;s par les membres de l'&eacute;quipe de projet dans le cadre d'un processus collaboratif, souvent it&eacute;ratif, qui permet des changements et des am&eacute;liorations constantes. Les gestionnaires de projet doivent faire appel &agrave; des comp&eacute;tences g&eacute;n&eacute;rales en gestion pour faciliter le travail de projet. Les comp&eacute;tences qui entrent en jeu ici comprennent : la planification strat&eacute;gique, la comptabilit&eacute;, la communication, la recherche et le d&eacute;veloppement, le comportement organisationnel, la gestion du temps, en plus de la multitude de comp&eacute;tences g&eacute;n&eacute;rales de gestion relatives au leadership, &agrave; la motivation et &agrave; la r&eacute;solution de conflits. Si vous vous demandez en quoi consiste la gestion de projet ?</p>
+<p>Nous d&eacute;crivons ci-dessous certains des &eacute;v&eacute;nements les plus typiques d'un projet :</p>
+<ul>
+<li>R&eacute;union de lancement : indiquez &agrave; l'&eacute;quipe les buts et les objectifs de haut niveau, exposez les d&eacute;tails dont vous disposez.</li>
+<li>Analyse des parties prenantes : d&eacute;terminer qui sera le plus affect&eacute; par le projet afin qu'elles puissent &ecirc;tre consult&eacute;es.</li>
+<li>D&eacute;finition de la port&eacute;e du projet : identifier toutes les exigences, les produits livrables et la port&eacute;e du projet.</li>
+<li>Structure de r&eacute;partition du travail (SRT) : diviser les phases du projet en blocs de travail qui peuvent &ecirc;tre trait&eacute;s plus facilement.</li>
+<li>Planification de la gestion des risques : identification et planification des risques les plus probables qu'un projet peut rencontrer au cours de son cycle de vie.</li>
+<li>Examen du projet/le&ccedil;ons apprises : faire un compte rendu &agrave; la fin d'un projet afin d'en tirer des le&ccedil;ons qui peuvent &ecirc;tre ajout&eacute;es &agrave; la base de connaissances ou aux pratiques exemplaires de l'organisation.</li>
+</ul>
+<p>La charg&eacute; de projets &agrave; pour mission de :</p>
+<ul>
+<li>Planifier le projet dans le temps et respecter les d&eacute;lais,</li>
+<li>Chiffrer et suivre le budget,</li>
+<li>Ma&icirc;triser et piloter les risques et impr&eacute;vus,</li>
+<li>Manager les &eacute;quipes (direction artistique, d&eacute;veloppement, &hellip;),</li>
+<li>&Ecirc;tre l&rsquo;interm&eacute;diaire entre les diff&eacute;rentes parties prenantes (clients, &eacute;quipes, &hellip;),</li>
+<li>Atteindre le niveau de qualit&eacute; souhait&eacute; dans les temps impartis.</li>
+</ul>
+                    <div class='btn-wrapper'>
+                        <a class='btn hvr-sweep-to-top' href="/agence-digitale">
+                            Agence communication digitale
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </section>
+    
+    <div id='slide-contact' data-index='(modified by JS)' data-bg-color='light'>
+    <div class='container vertical-align'>
+        <div class='content'>
+            <div class='h2'>Nous <strong>contacter</strong></div>
+            <div class='col-1-2'>
+                <div>
+                    <div class='col-1-2'>
+                        <div class='come-agence'>
+                            <div class='imp cities-titles'>Venez à l&#039;agence de
+                                Paris</div>
+                        </div>
+                        <table class='infos'>
+                            <tr>
+                                <td><i class='fa fa-map-marker'></i></td>
+                                <td>28 rue du Chemin Vert<br>75011 Paris
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class='fa fa-envelope-o'></i></td>
+                                <td><a data-analytics='Contact:email'
+                                        href='mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#53;&#48;&#97;&#46;&#102;&#114;'>&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#53;&#48;&#97;&#46;&#102;&#114;</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class='fa fa-phone'></i></td>
+                                <td><a data-analytics='Contact:tel' href='tel:0140330065'>01 40 33 00 65</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class='wrapper-map'>
+                        <a href='https://goo.gl/maps/Kvs7j8eXUCfoVgb47'
+                            target='_blank'><img
+                                src='https://www.50a.fr/img/50a-paris.jpg'
+                                loading="lazy" alt='Emplacement 50A sur google maps' /></a>
+                    </div>
+                    <div id='agency-links'>
+
+
+                                                                                                
+                                                    <a href="https://www.50a.fr/contact/agence-digital-marseille">Marseille</a>
+                            <a href="https://www.50a.fr/contact/agence-digital-besancon">Besançon</a>
+                            <a href="https://www.50a.fr/contact/agence-digital-geneve">Genève</a>
+
+                        
+                    </div>
+                </div>
+                <div class='clearfix'>
+                    <div class='no-time'>
+                        <div class='imp'>Pas le temps ?</div>
+                    </div>
+                    <div class='form'>
+                        <form target="_blank" method="POST" action="https://50a590.activehosted.com/proc.php"
+                            id="_form_15_" class="_form _form_15 _inline-form  _dark" novalidate>
+
+                            
+
+                            
+                            
+                            <input type="hidden" name="u" value="15" />
+                            <input type="hidden" name="f" value="15" />
+                            <input type="hidden" name="s" />
+                            <input type="hidden" name="c" value="0" />
+                            <input type="hidden" name="m" value="0" />
+                            <input type="hidden" name="act" value="sub" />
+                            <input type="hidden" name="v" value="2" />
+                            <h3 class='mobile'>Formulaire de contact</h3>
+                            
+                            
+                            
+                            <div class='col-2'>
+                                <div class="wrapper-first">
+
+                                    
+                                    <textarea id="firstname" placeholder=" " class="input required form-contact" data-persist="garlic" name="fullname" cols="50" rows="10"></textarea>
+
+
+                                    <span class="placeholder"> Nom et prénom </span>
+
+                                </div>
+                                
+                                
+                                
+
+                                
+                            </div>
+                            <div class='col-2'>
+                                <div class="wrapper-third">
+                                    <textarea id="company" placeholder=" " class="input form-contact-nr" data-persist="garlic" name="field[8]" cols="50" rows="10"></textarea>
+                                    <span class="placeholder-nr"> Société </span>
+                                </div>
+                                
+                                
+                                
+                                
+
+                                
+                                
+                            </div>
+                            <div class='col-2'>
+                                <div class="wrapper-fourth">
+                                    <textarea id="email" placeholder=" " class="required input form-contact" data-persist="garlic" name="email" cols="50" rows="10"></textarea>
+                                    <span class="placeholder"> E-mail </span>
+
+                                </div>
+                                <div class="wrapper-fifth">
+
+                                    <textarea id="telephone" placeholder=" " class="input right form-contact-nr-r" data-persist="garlic" name="field[3]" cols="50" rows="10"></textarea>
+                                    <span class="placeholder-nr-r"> Mobile </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-height">
+                                <select id="objet_contact" class="input required form-contact-selectb" name="field[11]"><option value="0">Objet *</option><option value="Demande de devis">Demande de devis</option><option value="Candidature spontanée">Candidature spontanée</option><option value="Autre">Autre</option></select>
+                            </div>
+                            <div class="wrapper-seventh invisible">
+                                <select id="budget_contact" class="input form-contact-selectb" name="field[23]"><option value="0">Quel est votre budget ? *</option><option value="&lt; 5000 €">&lt; 5000 €</option><option value="partials/contact.5000-&gt;15 000 €">5000 -&gt; 15 000 €</option><option value="15 000 -&gt; 30 000 €">15 000 -&gt; 30 000 €</option><option value="&gt; 30 000 €">&gt; 30 000 €</option></select>
+                                <textarea id="budg" placeholder=" " class="input form-contact" data-persist="garlic" name="field[25]" cols="50" rows="10"></textarea>
+                            </div>
+                            
+                            <div class="wrapper-sixth">
+                                <textarea style="margin-top: 21px;" placeholder=" " class="required form-contact-message" data-persist="garlic" name="field[9]" cols="50" rows="10"></textarea>
+                                <span class="placeholder-message"> Message
+                                </span>
+                            </div>
+                            
+                            
+
+                            
+
+                            <button data-analytics='Contact:formulaire' id="_form_15_submit" type="submit"
+                                class='send-button btn hvr-sweep-to-top black _submit'>Envoyer</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class='description-contact'>
+                <div class='imp'>
+
+                    
+                </div>
+            </div>
+            <div class="description-img">
+                <img src='#'
+                    alt='' />
+            </div>
+            <div class="description-content">
+                <p> </p>
+            </div>
+            
+                <div class='imp'>
+
+                    
+
+
+                </div>
+                    </div>
+    </div>
+</div>
+
+<script>
+    //   $(document).ready(function() {
+    //       $("#objet_contact").change(function() {
+    //           $("#objet_contact option:selected").each(function() {
+    //               if ($(this).attr("value") == "Demande de devis" || $(this).attr("value") == "Quotation request") {
+    //                   $(".wrapper-seventh").removeClass("invisible");
+    //                   $(".wrapper-seventh").addClass("visible");
+    //               } else {
+    //                   $(".wrapper-seventh").removeClass("visible");
+    //                   $(".wrapper-seventh").addClass("invisible");
+    //               }
+    //           });
+    //       }).change();
+    //   });
+
+    //   $(document).ready(function() {
+    //         $("#budget_contact").change(function() {
+    //             $("#budget_contact option:selected").each(function() {
+    //             var budget = $(this).attr("value");
+    //             $("#budg").val(budget);
+    //             // console.log($("#budg").val());
+    //         });
+    //         }).change();
+    //     });
+</script>
+
+
+
+
+
+
+    <script defer src="https://www.50a.fr/js/jquery.min.js "></script>
+
+        <div id='block-newsletter'>
+    <div class="container">
+        <img loading="lazy" alt='newsletter' src="/img/newsletter.png">
+        <div class='h2'>Abonnez-vous à notre <strong>newsletter !</strong></div>
+        <a class="btn hvr-sweep-to-top newsletter-button" href="https://50a590.ac-page.com/inscription-newsletter"
+            target="_blank">Je m'abonne</a>
+    </div>
+</div>
+
+<footer class='main'>
+            <div id='block-spreaker' class="container">
+            <h2 class="podcasts-subtitle">Nos <b> podcasts </b></h2>
+
+                            <a class="spreaker-player" href="https://www.spreaker.com/show/50a-galaxy"
+                    data-resource="episode_id=41418683" data-width="100%" data-height="250px" data-theme="dark"
+                    data-playlist="false" data-playlist-continuous="false" data-autoplay="false"
+                    data-live-autoplay="false" data-chapters-image="true" data-hide-logo="false" data-hide-likes="false"
+                    data-hide-comments="false" data-hide-sharing="false">Listen to "50A Galaxy" on Spreaker.</a>
+                <script defer async src="https://widget.spreaker.com/widgets.js"></script>
+            
+        </div>
+        <div id='block-spreaker-episodes' class="container">
+            <h3>Téléchargez nos podcasts</h3>
+            <a href="/podcasts/episode-0-presentation-du-podcast-50a-galaxy"
+                target='_blank'>Épisode 0</a>
+            <a href="/podcasts/episode-1-la-transformation-numerique-de-letat"
+                target='_blank'>Épisode 1</a>
+            <a href="/podcasts/episode-2-la-transformation-numerique-de-limmobilier"
+                target='_blank'>Épisode 2</a>
+            <a href="/podcasts/episode-3-la-transformation-numerique-des-agences-de-communication"
+                target='_blank'>Épisode 3</a>
+            <a href="/podcasts/episode-4-la-transformation-numerique-de-la-sante"
+                target='_blank'>Épisode 4</a>
+            <a href="/podcasts/episode-5-la-transformation-numerique-du-tourisme-et-de-lhotellerie"
+                target='_blank'>Épisode 5</a>
+            <a href="/podcasts/episode-6-existe-til-un-mouvement-de-colonisation-numerique"
+                target='_blank'>Épisode 6</a>
+            <a href="/podcasts/episode-7-religion-et-technologie-acte-1-reflexion-dun-think-tank-chretien"
+                target='_blank'>Épisode 7</a><br />
+            <a href="/podcasts/episode-8-blockchain-friends-presentation-de-daneel-analyse-de-comportement"
+                target='_blank'>Épisode 8</a>
+            <a href="/podcasts/episode-9-blockchain-friends-presentation-de-ipocamp-protection-de-la-creation"
+                target='_blank'>Épisode 9</a>
+            <a href="/podcasts/episode-10-blockchain-friends-presentation-des-projets-blockchain-sncf"
+                target='_blank'>Épisode 10</a>
+            <a href="/podcasts/episode-11-blockchain-friends-presentation-de-btu-protocol"
+                target='_blank'>Épisode 11</a>
+            <a href="/podcasts/episode-12-blockchain-friends-presentation-de-ibm-blockchain"
+                target='_blank'>Épisode 12</a>
+            <a href="/podcasts/episode-13-parcours-utilisateur" target='_blank'>Épisode
+                13</a>
+            <a href="/podcasts/episode-14-technologies-partout-democratie-nulle-part"
+                target='_blank'>Épisode 14</a>
+        </div>
+
+        <div id='block-subvention'>
+
+            <div class="container">
+
+                <div class='h2'><i class="fa fa-heart subsheart"></i>Trouvez la bonne <strong>subvention</strong></div>
+                <a class="btn hvr-sweep-to-top newsletter-button" href='https://www.50a.fr/subventions'>Je finance mon
+                    projet</a>
+            </div>
+        </div>
+        <div class='container clearfix'>
+        <div class='column-1 col-2'>
+            <div class='we-love'>we <i class="fa fa-heart"></i><br>vous rendre<br>service</div>
+            <div>
+                <ul>
+                    <li><a data-analytics='Footer:basecamp' class='btn hvr-sweep-to-top' href='/0/basecamp'><i
+                                class="fa fa-book"></i>basecamp</a></li>
+                    <li><a data-analytics='Footer:blog' class='btn hvr-sweep-to-top' target='_blank'
+                            href='https://blog.50a.fr'><i
+                                class="fa fa-smile-o"></i>le blog</a></li>
+                    <li><a data-analytics='Footer:afnic' class='btn hvr-sweep-to-top' href='https://www.50a.fr/ventes-domaine-fr'><i
+                                class="fa fa-check-circle-o"></i>Votre .fr</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='column-2'>
+            <ul>
+
+                <li><a data-analytics='Footer:references'
+                        href='https://www.50a.fr/nos-references'>Références</a></li>
+                <li><a data-analytics='Footer:mentions legales'
+                        href='https://www.50a.fr/mentions-legales'>Mentions légales</a></li>
+                <li><a data-analytics='Footer:contact'
+                        href='https://www.50a.fr/contact'>Contact</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a
+                        data-analytics='Footer:contact-tel' href="tel:+33140330065"
+                        rel="me">Tel</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a
+                        data-analytics='Footer:contact-mail' href="mailto:bonjour@50a.fr"
+                        rel="me">Mail</a></li>
+                <li><a data-analytics='Footer:glossaire'
+                        href='https://www.50a.fr/glossaire'>Glossaire</a>
+                </li>
+            </ul>
+        </div>
+        <div class='column-3'>
+            <ul>
+                <li><a data-analytics='Footer:newsletter' target='_blank'
+                        href='https://50a590.ac-page.com/inscription-newsletter'>Newsletter</a>
+                </li>
+                <li><a data-analytics='Footer:plan du site'
+                        href='https://www.50a.fr/plan-du-site'>Plan du site</a></li>
+                <li><a data-analytics='Footer:vintage 50A'
+                        href='https://www.50a.fr/vie-agence'>Vintage 50A</a></li>
+                <li><a data-analytics='Footer:academy 50A' href='https://academy.50a.fr/'>50A Academy</a></li>
+                <li><img loading="lazy" alt='nuage accompagner mobile' style='max-width: 50%;'
+                        src='https://www.50a.fr/img/logo-qualiopi.png' /></li>
+            </ul>
+        </div>
+        <div class='column-4'>
+            <div class="social-icons">
+                <div>
+                    <a data-analytics='Footer RS:facebook' class='first' href='https://www.facebook.com/agence50A'
+                        target='_blank'><i class="fa fa-facebook"></i></a>
+                    <a data-analytics='Footer RS:slideshare' href='http://fr.slideshare.net/agence50a'
+                        target='_blank'><i class='fa fa-slideshare'></i></a>
+                </div>
+                <div>
+                    <a data-analytics='Footer RS:twitter' class='first' href='https://twitter.com/agence50a'
+                        target='_blank'><i class='fa fa-twitter'></i></a>
+                    <a data-analytics='Footer RS:instagram' href='http://instagram.com/agence50a' target='_blank'><i
+                            class='fa fa-instagram'></i></a>
+                    <a data-analytics='Footer RS:linkedin' href='https://www.linkedin.com/company/1108309'
+                        target='_blank'><i class='fa fa-linkedin'></i></a>
+                </div>
+            </div>
+            <a class='w3c' target='_blank' href="https://validator.w3.org/check?uri=https://www.50a.fr">
+                <img src="https://www.w3.org/Icons/valid-html401" alt="Valid XHTML 4.01!" />
+            </a>
+        </div>
+    </div>
+
+    <script defer src="https://www.50a.fr/js/waypoints.min.js"></script>
+
+    <script defer src="https://www.50a.fr/js/jquery.customSelect.min.js "></script>
+    <script defer src="https://www.50a.fr/js/garlic.min.js"></script>
+    
+
+    
+    <script defer src="/js/main.js"></script>
+
+    <script src="https://www.50a.fr/js/tarteaucitron/tarteaucitron.js"></script>
+    <script type="module" src="https://www.50a.fr/js/cookies.js"></script>
+    <link rel="stylesheet" href="https://www.50a.fr/css/cookies.css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script defer type="text/javascript">
+        (function() {
+            var css = document.createElement('link');
+            css.href = '/css/font-awesome.min.css';
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            document.getElementsByTagName('head')[0].appendChild(css);
+        })();
+    </script>
+</footer>
+
+
+
+<script src="https://www.50a.fr/js/tarteaucitron/tarteaucitron.js"></script>
+<script type="module" src="https://www.50a.fr/js/cookies.js"></script>
+<link rel="stylesheet" href="https://www.50a.fr/css/cookies.css">
+
+</body>
+
+</html>

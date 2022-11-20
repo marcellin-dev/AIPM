@@ -15,11 +15,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #67b0d1;
+  color: #000000;
 }
 
 a:hover {
-  color: #8ec4dd;
+  color: #dd8ea3;
   text-decoration: none;
 }
 
@@ -86,7 +86,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 24px 0;
-  background: rgba(103, 176, 209, 0.8);
+  background: rgba(157, 170, 126, 0.8);
 }
 
 #header.header-transparent {
@@ -94,7 +94,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(55, 142, 181, 0.9);
+  background: rgba(180, 22, 22, 0.9);
   padding: 12px;
 }
 
@@ -113,7 +113,9 @@ h6 {
   color: #fff;
   text-decoration: none;
 }
-
+#header .navbar a:hover{
+  color:#000000;
+}
 #header .logo img {
   padding: 0;
   margin: 0;
@@ -174,7 +176,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(152, 17, 17, 0.144);
 }
 
 .navbar .dropdown ul {
@@ -353,7 +355,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/banner.jpg") top center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/banner.jpg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -374,7 +376,7 @@ h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
@@ -428,6 +430,37 @@ h6 {
     margin-bottom: 30px;
   }
 }
+
+
+/*--------------------------------------------------------------
+# activite section 
+--------------------------------------------------------------*/
+iconify-icon{
+  font-size: 50px;
+  color: red;
+
+}
+.menu{
+border-right: 0.5px solid;
+
+}
+.menuin{
+  border-left: 0.5px solid;
+}
+.menu:hover{
+  box-shadow: 1px 1px 1px red;
+}
+.menuin:hover {
+  box-shadow: 2px 1px 1px red;
+}
+
+.secactivite{
+  font-weight: 700;
+    font-size: 34px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -520,16 +553,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# partnenaires
 --------------------------------------------------------------*/
-.about {
-  background: url("../img/about-bg.jpg") center center no-repeat;
+.partnenaires {
+  background: url("../img/partnenaires-bg.jpg") center center no-repeat;
   background-size: cover;
   padding: 60px 0;
   position: relative;
 }
 
-.about::before {
+.partnenaires::before {
   content: "";
   position: absolute;
   left: 0;
@@ -540,27 +573,30 @@ section {
   z-index: 9;
 }
 
-.about .container {
+.partnenaires .container {
   position: relative;
   z-index: 10;
+ 
 }
 
-.about .content {
-  padding: 30px 30px 30px 0;
+.partnenaires .content {
+  padding: 0px 30px 30px 0;
 }
 
-.about .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  color: #2f4d5a;
+.partnenaires .content h3 {
+  font-weight: 500;
+  font-size: 32px;
+  color:red;
+  margin-bottom: 30px;
+}
+.content2 {
+  color: black;
+}
+.partnenaires .content p {
   margin-bottom: 30px;
 }
 
-.about .content p {
-  margin-bottom: 30px;
-}
-
-.about .content .about-btn {
+.partnenaires .content .partnenaires-btn {
   display: inline-block;
   background: #67b0d1;
   padding: 6px 44px 8px 30px;
@@ -570,46 +606,47 @@ section {
   position: relative;
 }
 
-.about .content .about-btn i {
+.partnenaires .content .partnenaires-btn i {
   font-size: 18px;
   position: absolute;
   right: 18px;
   top: 9px;
 }
 
-.about .content .about-btn:hover {
+.partnenaires .content .partnenaires-btn:hover {
   background: #7bbad7;
 }
 
-.about .icon-boxes .icon-box {
+.partnenaires .icon-boxes .icon-box {
   margin-top: 30px;
+  
 }
 
-.about .icon-boxes .icon-box i {
+.partnenaires .icon-boxes .icon-box i {
   font-size: 40px;
   color: #67b0d1;
   margin-bottom: 10px;
 }
 
-.about .icon-boxes .icon-box h4 {
+.partnenaires .icon-boxes .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
 }
 
-.about .icon-boxes .icon-box p {
+.partnenaires .icon-boxes .icon-box p {
   font-size: 15px;
   color: #848484;
 }
 
 @media (max-width: 1200px) {
-  .about .content {
+  .partnenaires .content {
     padding-right: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .about {
+  .partnenaires {
     text-align: center;
   }
 }
@@ -617,12 +654,20 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+.services{
+  color: #000000;
+}
+.services h2{
+  color: red;
+}
+
 .services .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  box-shadow: 0 0 29px 0 rgba(0, 1, 2, 0.12);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
@@ -631,7 +676,7 @@ section {
 .services .icon-box::before {
   content: "";
   position: absolute;
-  background: white;
+  background: rgb(255, 255, 255);
   right: 0;
   left: 0;
   bottom: 0;
@@ -641,7 +686,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #67b0d1;
+  background:rgb(134, 133, 133) ;
   top: 0;
   border-radius: 0px;
 }
@@ -650,10 +695,12 @@ section {
   margin-bottom: 15px;
 }
 
+
+
 .services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #67b0d1;
+  color: #ec1a1a;
   transition: all 0.3s ease-in-out;
 }
 
@@ -736,23 +783,31 @@ section {
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
-.cta {
-  background: linear-gradient(rgba(103, 176, 209, 0.8), rgba(103, 176, 209, 0.8)), url("../img/cta-bg.jpg") fixed center center;
+.identite{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
-
-.cta h3 {
+hr{
+  width: 20%;
+  border-radius: 0.3rem;
+  border: 2px solid gold;
+}
+.identite .container{
   color: #fff;
+}
+
+.identiteh3 {
+  color:red;
   font-size: 28px;
   font-weight: 700;
 }
 
-.cta p {
+.identitep {
   color: #fff;
 }
 
-.cta .cta-btn {
+.identite.cta-btn {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -767,8 +822,8 @@ section {
   color: #fff;
 }
 
-.cta .cta-btn:hover {
-  border-color: #fff;
+.identite.cta-btn:hover {
+  border-color: rgb(239, 189, 10);
 }
 
 /*--------------------------------------------------------------
