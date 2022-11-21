@@ -46,7 +46,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 998;
-  background: #67b0d1;
+  background: red;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -60,8 +60,8 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #86c0da;
-  color: #fff;
+  background: #fb7676;
+  color: rgb(0, 0, 0);
 }
 
 .back-to-top.active {
@@ -355,7 +355,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/banner.jpg") top center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/banner2N.webp") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -496,7 +496,7 @@ section {
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
-  background: url(../img/section-title-bg.png) no-repeat;
+  background:no-repeat;
   z-index: -1;
 }
 
@@ -579,19 +579,25 @@ section {
  
 }
 
-.partnenaires .content {
+.partnenaires .content2 {
   padding: 0px 30px 30px 0;
+  color:red ;
+  font-weight: bold;
 }
 
+.partnenaires.container.content2{
+font-weight: 500;
+  font-size: 32px;
+  color: red !important;
+  margin-bottom: 30px;
+}
 .partnenaires .content h3 {
   font-weight: 500;
   font-size: 32px;
   color:red;
   margin-bottom: 30px;
 }
-.content2 {
-  color: black;
-}
+
 .partnenaires .content p {
   margin-bottom: 30px;
 }
@@ -619,7 +625,8 @@ section {
 
 .partnenaires .icon-boxes .icon-box {
   margin-top: 30px;
-  
+  padding: 10px;
+  height: 13rem;
 }
 
 .partnenaires .icon-boxes .icon-box i {
@@ -1175,6 +1182,7 @@ hr{
 --------------------------------------------------------------*/
 .contact {
   padding-bottom: 80px;
+  background: linear-gradient(rgb(0,0,0), rgb(0,0,0), url("assets/img/banner2N.webp") top center));
 }
 
 .contact .info-box {
@@ -1187,7 +1195,7 @@ hr{
 
 .contact .info-box i {
   font-size: 32px;
-  color: #67b0d1;
+  color: #ff1111;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #f0f7fa;
@@ -1195,7 +1203,7 @@ hr{
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: #0b0000;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1276,15 +1284,15 @@ hr{
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #67b0d1;
+  background: #ed8484;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: rgb(10, 0, 0);
   transition: 0.4s;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #8ec4dd;
+  background: #f07b7b;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1311,7 +1319,7 @@ hr{
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #263f49;
+  background: #070707;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1325,10 +1333,14 @@ hr{
   margin-top: -90px;
   margin-bottom: 15px;
   background: white;
-  color: #2f4d5a;
-  border-top: 4px solid #67b0d1;
+  color: #000000;
+  border-top: 6px solid gold;
   text-align: center;
   padding: 30px 20px;
+}
+
+#footer .footer-top .footer-info h3{
+background-color: 1px solid #e6e322;
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1349,7 +1361,7 @@ hr{
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #2f4d5a;
+  background:red;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1362,7 +1374,7 @@ hr{
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #67b0d1;
+  background: #ede8e8;
   color: #fff;
   text-decoration: none;
 }
@@ -1410,12 +1422,12 @@ hr{
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #a2cfe3;
+  color: #e3a2a2;
 }
 
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: white;
   padding: 6px 10px;
   position: relative;
   border-radius: 4;
@@ -1436,18 +1448,18 @@ hr{
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #67b0d1;
-  color: #fff;
+  background: gold;
+  color: black;
   transition: 0.3s;
   border-radius: 4;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #409cc5;
+  background: #c54040;
 }
 
 #footer .copyright {
-  border-top: 1px solid #385b6b;
+  border-top: 1px solid gold ;
   text-align: center;
   padding-top: 30px;
 }
